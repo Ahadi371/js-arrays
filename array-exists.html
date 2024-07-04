@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function magaFriend(friends) {
+            if (Array.isArray(friends) == false) {
+            return 'place Pprovid an array'    
+            }
+            let maga = friends[0];
+            for (const friend of friends) {
+             if (friend.length > maga.length) {
+            maga = friend;    
+             }   
+            }
+            return maga;
+        }
+        const friends =['Hasan', 'rizve','Nadim', 'Sabbir'];
+        const myBigBuddy = magaFriend(1234);
+        console.log(myBigBuddy);
+    </script>
+</body>
+</html>
